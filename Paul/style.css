@@ -34,6 +34,24 @@ body {
 .nav-container .icon {
   display: none;
 }
+/*I started here*/
+section{
+  display:flex;
+  justify-content:space-around;
+}
+.button1 , .button2{
+  font-size:23px;
+  text-decoration: none;
+  color:black;
+  padding:15px 32px;
+}
+.button1{
+  background-color: rgb(131,39,190);
+}
+
+.button2{
+  background-color: rgb(226,218,15);
+}
 
 @media screen and (max-width: 600px) {
   .nav-container a:not(:first-child) {display: none;}
