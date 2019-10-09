@@ -6,44 +6,57 @@
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
-
-<div class="nav-container" id="the-nav-container">
+<header class="topnav" id="myTopnav">
   <a href="#home" class="active">Home</a>
-  <a href="#our-story">Our Story</a>
-  <a href="#our-expertise">Our Expertise</a>
-  <a href="#our-client">Our Clients</a>
-  <a href="#connect-with-us">Connect with us</a>
+  <a href="#news">Our Story</a>
+  <a href="#contact">Our Expertise</a>
+  <a href="#about">Our Clients</a>
+  <a href="#blue">Contact Us</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
-</div>
-<!--I started here-->
+</header>
 
-<h1 class="quote">Where Public Relations Meets Purpose</h1>
 
-<section>
+<section class="jumbotron">
+  <h2>WHERE PUBLIC RELATIONS MEETS PURPOSE</h2>
+</section>
+
+<section class="button">
   <a href="#" class="button1">Large Corporations</a>
   <a href ="#" class="button2">Non-profit</a>
 </section>
 
 <footer>
+  <section class="social-media">
+    <ul>
+      <li><a href="https://www.facebook.com/tjmandco/?hl=en" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.instagram.com/tjmandco/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+      <li><a href="#" class="fa fa-linkedin"></a></li>
+    </ul>
+  </section>
   
+  <section class="contact">
+    <p><a href="tel:1.347.620.4569">347.620.4569</a></p>
+    <address>7 Marcus Garvey Blvd, Brooklyn, NY 11206</address>
+  </section>
+  
+  
+  <section class="final">
+    <p>© 2017 TJM and Company.</p>
+  </section>
 </footer>
-
-
-
-
 
 
 
 
 <script>
 function myFunction() {
-  var x = document.getElementById("the-nav-container");
-  if (x.className === "nav-container") {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
     x.className += " responsive";
   } else {
-    x.className = "nav-container";
+    x.className = "topnav";
   }
 }
 </script>
