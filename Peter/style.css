@@ -1,56 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Overpass&display=swap');
 
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  font-family: 'Overpass', sans-serif;
 }
 
-.nav-container {
+.topnav {
   overflow: hidden;
-  background-color: black;
-  display: flex;
-  justify-content: space-between;
+  background-color: #212121;
+  display:;
+  padding: 20px 0px;
 }
 
-.nav-container a {
+.topnav a {
   float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 13px;
+  font-family: proxima-nova;
+  font-weight: 600;
+  font-style: normal;
 }
 
-.nav-container a:hover {
-  background-color: #ddd;
-  color: black;
+.topnav a:hover {
+
 }
 
-/*On current page*/
-.nav-container a.active {
-  background-color: #300137;
+.topnav a.active {
+  background-color: #4CAF50;
   color: white;
 }
 
-.nav-container .icon {
+.topnav .icon {
   display: none;
+  float: right;
 }
 
 @media screen and (max-width: 600px) {
-  .nav-container a:not(:first-child) {display: none;}
-  .nav-container a.icon {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
     float: right;
     display: block;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .nav-container.responsive {position: relative;}
-  .nav-container.responsive .icon {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
     position: absolute;
     right: 0;
     top: 0;
   }
+  
   .topnav.responsive a {
     float: none;
     display: block;
@@ -58,7 +64,37 @@ body {
   }
 }
 
-main {
-height: 600px;
-background-color:green;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #1f1f1f;
+  color: white;
+  height: 200px;
+}
+
+footer.social-media-footer {
+  display: inline-flex;
+  background-color: #333333;
+}
+
+footer .contact {
+  
 }
