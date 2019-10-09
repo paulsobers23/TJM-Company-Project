@@ -6,7 +6,6 @@
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
-
 <header class="topnav" id="myTopnav">
   <a href="#home" class="active">Home</a>
   <a href="#news">Our Story</a>
@@ -18,24 +17,30 @@
   </a>
 </header>
 
-<div style="padding-left:16px">
-  <h2>Responsive Topnav Example</h2>
-  <p>Resize the browser window to see how it works.</p>
-</div>
 
-
+<section class="jumbotron">
+  <h2>WHERE PUBLIC RELATIONS MEETS PURPOSE</h2>
+</section>
 
 
 <footer>
-  <section class="social-media-footer">
-    Facebook-Instagram
-    <i class="fa fa-twitter" style="font-size:36px"></i>
+  <section class="social-media">
+    <ul>
+      <li><a href="https://www.facebook.com/tjmandco/?hl=en" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.instagram.com/tjmandco/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+      <li><a href="#" class="fa fa-linkedin"></a></li>
+    </ul>
   </section>
   
   <section class="contact">
-    <address>7 Marcus Garvey BlvdBrooklyn, NY 11206</address>
+    <p><a href="tel:1.347.620.4569">347.620.4569</a></p>
+    <address>7 Marcus Garvey Blvd, Brooklyn, NY 11206</address>
   </section>
   
+  
+  <section class="final">
+    <p>© 2017 TJM and Company.</p>
+  </section>
 </footer>
 
 
@@ -48,31 +53,6 @@ function myFunction() {
     x.className += " responsive";
   } else {
     x.className = "topnav";
-=======
-
-<div class="nav-container" id="the-nav-container">
-  <a href="#home" class="active">Home</a>
-  <a href="#our-story">Our Story</a>
-  <a href="#our-expertise">Our Expertise</a>
-  <a href="#our-client">Our Clients</a>
-  <a href="#connect-with-us">Connect with us</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-    <i class="fa fa-bars"></i>
-  </a>
-</div>
-
-<section>
-text
-</section>
-
-<script>
-function myFunction() {
-  var x = document.getElementById("the-nav-container");
-  if (x.className === "nav-container") {
-    x.className += " responsive";
-  } else {
-    x.className = "nav-container";
-
   }
 }
 </script>

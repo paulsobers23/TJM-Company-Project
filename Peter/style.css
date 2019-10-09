@@ -1,5 +1,5 @@
-
 @import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Overpass&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 
 body {
   margin: 0px;
@@ -9,7 +9,7 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #212121;
-  display:;
+
   padding: 20px 0px;
 }
 
@@ -35,6 +35,7 @@ body {
 .topnav a.active {
   background-color: #4CAF50;
   color: white;
+  border-radius: 10%;
 }
 
 .topnav .icon {
@@ -43,7 +44,10 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+    display: none;
+    
+  }
   .topnav a.icon {
     float: right;
     display: block;
@@ -51,7 +55,10 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
+  .topnav.responsive {
+    position: relative;
+    
+  }
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -73,6 +80,28 @@ body {
 
 
 
+.jumbotron {
+  height: 250px;
+  background:url(https://cdn.traveltripper.io/site-assets/192_680_8843/media/2017-10-27-161641/mts-best-views-new-york-skyline.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.jumbotron h2 {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+
+
+
+
+
+
 
 
 
@@ -83,79 +112,60 @@ body {
 /*Footer*/
 
 footer {
+  background-color: #343a40; 
+  color: white;
+}
+
+section.social-media {
+  height: 30px;
+  padding: 2px 0px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  background-color: #1f1f1f;
-  color: white;
-  height: 200px;
+  align-items: center;
 }
 
-footer.social-media-footer {
-  display: inline-flex;
-  background-color: #333333;
-}
-
-footer .contact {
-  
-}
-=======
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.nav-container {
-  overflow: hidden;
-  background-color: #333;
+.social-media ul{
   display: flex;
+  justify-content: center;
   justify-content: space-between;
-}
-
-.nav-container a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
   text-decoration: none;
-  font-size: 17px;
 }
 
-.nav-container a:hover {
-  background-color: #ddd;
-  color: black;
+.social-media ul li {
+  font-size: 22px;
+  margin-right: 30px;
 }
 
-/*On current page*/
-.nav-container a.active {
-  background-color: #4CAF50;
-  color: white;
+body > footer > section.social-media > ul > li:nth-child(3)  {
+  margin: 0px;
+}
+.social-media ul li a {
+  color: #fff;
 }
 
-.nav-container .icon {
-  display: none;
+section.contact {
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  padding: 0px 0px 10px 0px;
 }
 
-@media screen and (max-width: 600px) {
-  .nav-container a:not(:first-child) {display: none;}
-  .nav-container a.icon {
-    float: right;
-    display: block;
-  }
+
+.contact a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
 }
 
-@media screen and (max-width: 600px) {
-  .nav-container.responsive {position: relative;}
-  .nav-container.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+footer .final {
+  display: flex;
+  justify-content: center;
+  background-color: #212529;
+  font-size: 12px;
 }
-
